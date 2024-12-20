@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavbarComponent from "../components/NavbarComponent";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { createProduct } from "../features/productSlice";
 
 const CreatePage = () => {

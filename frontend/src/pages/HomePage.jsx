@@ -83,12 +83,15 @@ const HomePage = () => {
                         </h5>
                         <p className="card-price">$ {product.price}</p>
                         <div className="btn-group" role="group">
-                          <button type="button" className="btn btn-warning">
+                          <button
+                            type="button"
+                            className="btn btn-sm btn-warning"
+                          >
                             Edit
                           </button>
                           <button
                             type="button"
-                            className="btn btn-danger"
+                            className="btn btn-sm btn-danger"
                             onClick={() => handleDelete(product._id)}
                           >
                             Delete

@@ -10,7 +10,7 @@ const NavbarComponent = () => {
   return (
     <>
       <nav>
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="bg-body-tertiary border border-bottom">
           <Container>
             <div className="navbar-brand p-0 m-0 flex-grow-1">
               <Link

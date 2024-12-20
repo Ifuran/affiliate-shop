@@ -74,12 +74,16 @@ export const getProductById = (pid) => {
 export const createProduct = (newProduct) => {
   return async (dispatch, getState) => {
     dispatch(startLoading());
+    // if (!newProduct.title || !newProduct.price ||!newProduct.image_url || !newProduct.product_url || !newProduct.description) {
+    //   dispatch(setError(""))
+    // }
     try {
       const result = await axios.post(
         "http://localhost:5000/api/products",
         newProduct
       );
-      dispatch(fetchProductByIdSuccess(result.data.data));
+      console.log(result);
+      // dispatch(fetchProductByIdSuccess(result));
     } catch (error) {
       dispatch(setError(error));
     }
